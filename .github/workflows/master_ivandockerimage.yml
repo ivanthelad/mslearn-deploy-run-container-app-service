@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: ivanacrdemo.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_6f1d6a1490764a4f9c847d84311dbc6f }}/webimage:${{ github.sha }}
-        file: ./Dockerfile
+        context: dotnet
 
   deploy:
     runs-on: ubuntu-latest
